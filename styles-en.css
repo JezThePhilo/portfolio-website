@@ -194,6 +194,9 @@
       .educations{
         margin: 0 auto;
       }
+      .educations2{
+        min-width: 90vw;
+      }
       .project-tile{
         height: 26vh;
       }
@@ -210,6 +213,21 @@
   @media screen and (max-width: 400px){
     #projects{
       height: 210vh;
+    }
+    .educations{
+      margin: 0 auto;
+    }
+    .project-tile{
+      height: 26vh;
+    }
+    .language{
+      height: 47vh;
+    }
+    .educations{
+      height: 32vh;
+    }
+    .software{
+      height: 19vh;
     }
   }
   @media screen and (min-width: 1050px){
