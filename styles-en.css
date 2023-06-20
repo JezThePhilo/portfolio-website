@@ -87,7 +87,7 @@
     padding-top: 4vh;
     padding-bottom: 3vh;
     font-size: 4vh;
-    text-decoration: underline #88225C double 1px;
+    text-decoration: underline var(--color2) double 1px;
   }
   .contact-header{
     padding-top: 4vh;
