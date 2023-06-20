@@ -1,3 +1,11 @@
+:root{
+  --color1: RGB(137, 117, 185);
+  --color2: RGB(188, 187, 230);
+  --color3: RGB(162 151 203);
+  --color4: RGB(60, 18, 114);
+}
+
+
 *{
     font-family: Helvetica, sans-serif;
     position: relative;
@@ -5,10 +13,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body{
-    position: relative;
   }
   #navbar{
     display: flex;
@@ -18,7 +22,7 @@
     width: 100%;
     position: fixed;
     font-weight: bold;
-    background-color: #8167A5;
+    background-color: var(--color1);
     top: 0;
     left: 0;
     z-index: 999;
@@ -33,7 +37,6 @@
     text-align: center;
     font-size: 2.5vh;
     height: 100%;
-    overflow: hidden;
   }
   .nav-list li{
     padding: 20px 3vw;
@@ -61,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #A895C4;
+    background: var(--color2);
     color: #EEEAF5;
   }
   #welcome-section h1{
@@ -73,45 +76,44 @@
     opacity: 90%;
     color: #9F3279;
   }
-  #projects{
-    margin-top: 0;
-    padding-top: 0;
+  #project{
+    width: 100%;
     height: 130vh;
-    background-color: #9A9CC7;
+    background-color: var(--color3);
     text-align: center;
     color: white;
   }
   .projects-header{
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
     font-size: 4vh;
-    text-decoration: underline #88225C double 2px;
+    text-decoration: underline #88225C double 1px;
   }
   .contact-header{
-    padding-top: 20px;
+    padding-top: 4vh;
     font-size: 4vh;
-    text-decoration: underline #88225C double 2px;
+    text-decoration: underline #88225C double 1px;
   }
   .confidence h3, .education h3{
     font-size: 4vh;
     padding-bottom: 3vh;
   }
-  
   .project-tile{
-    height: 23vh;
+    height: 27vh;
     width: 90%;
     border: solid RGBA(85, 33, 113, 0.8) 2px;
     border-radius: 5px;
     font-size: 2vh;
+    background-color: RGBA(188, 187, 230, 0.3)
   }
   .language{
-    height: 41vh;
+    height: 48vh;
   }
   .educations{
-    height: 25vh
+    height: 30vh
   }
   .software{
-    height: 16vh;
+    height: 18vh;
   }
   .project-tile h4{
     font-size: 3vh;
@@ -135,8 +137,8 @@
   }
   hr{
     color: RGBA(85, 33, 113, 0.8);
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
   .confidence .line{
     height: 5%;
@@ -148,7 +150,7 @@
   .full, .half, .low, .low-half, .high-half{
     height: 100%;
     border-radius: inherit;
-    background-color: purple;
+    background-color: var(--color4);
   }
   .full{
     width: 100%;
@@ -171,16 +173,19 @@
     color: inherit;
   }
   #contact{
-    height: 47vh;
-    background-color: #C3659A;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--color1);
+    color: var(--color4); 
+    bottom: 0;
   }
   #contact h1{
     text-align: center;
   }
   
   @media screen and (max-width: 700px){
-    #projects{
-      height: 200vh;
+    #project{
+      height: 220vh;
     }
     .gridder{
         display: flex;
@@ -198,30 +203,30 @@
         min-width: 90vw;
       }
       .project-tile{
-        height: 26vh;
+        height: 28vh;
       }
       .language{
-        height: 45vh;
+        height: 50vh;
       }
       .educations{
         height: 30vh;
       }
       .software{
-        height: 17vh;
+        height: 20vh;
       }
     }
   @media screen and (max-width: 400px){
-    #projects{
-      height: 210vh;
+    #project{
+      height: 216vh;
     }
     .educations{
       margin: 0 auto;
     }
     .project-tile{
-      height: 26vh;
+      height: 28vh;
     }
     .language{
-      height: 47vh;
+      height: 50vh;
     }
     .educations{
       height: 32vh;
@@ -231,8 +236,8 @@
     }
   }
   @media screen and (min-width: 1050px){
-    #projects{
-      height: 110vh;
+    #project{
+      height: 130vh;
     }
   }
   .contact-links {
