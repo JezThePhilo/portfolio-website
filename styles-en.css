@@ -74,7 +74,7 @@
   #welcome-section h2{
     font-size: 5vh;
     opacity: 90%;
-    color: #9F3279;
+    color: var(--color4);
   }
   #project{
     width: 100%;
@@ -92,7 +92,7 @@
   .contact-header{
     padding-top: 4vh;
     font-size: 4vh;
-    text-decoration: underline #88225C double 1px;
+    text-decoration: underline var(--color2) double 1px;
   }
   .confidence h3, .education h3{
     font-size: 4vh;
