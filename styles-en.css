@@ -257,5 +257,5 @@
     transition: transform 0.3s ease-out;
   }
   .contact-details:hover {
-    transform: translateY(8px);
+    transform: translateY(-8px);
   }
